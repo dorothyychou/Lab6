@@ -1,6 +1,6 @@
-# Lab 6 - Starter
+# Lab 6 - Web Components & HTTP Requests
 
-Dorothy Chou, Zane Wang
+Dorothy Chou & Zane Wang (Team 9 `import pandas`)
 
 https://dorothyychou.github.io/Lab6/
 
