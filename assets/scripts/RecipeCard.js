@@ -146,24 +146,9 @@ class RecipeCard extends HTMLElement {
       
       // rating stars
       const stars = document.createElement('img');
-      if (Math.round(rateValue) == 0) {
-        stars.src = "../assets/images/icons/0-star.svg"; 
-      }
-      else if (Math.round(rateValue) == 1) {
-        stars.src = "../assets/images/icons/1-star.svg"; 
-      }
-      else if (Math.round(rateValue) == 2) {
-        stars.src = "../assets/images/icons/2-star.svg"; 
-      }
-      else if (Math.round(rateValue) == 3) {
-        stars.src = "../assets/images/icons/3-star.svg"; 
-      }
-      else if (Math.round(rateValue) == 4) {
-        stars.src = "../assets/images/icons/4-star.svg"; 
-      }
-      else if (Math.round(rateValue) == 5) {
-        stars.src = "../assets/images/icons/5-star.svg"; 
-      }
+
+      stars.src = `../assets/images/icons/${Math.round(rateValue)}-star.svg`; 
+      stars.alt = `${Math.round(rateValue)} stars`;
       rateDiv.appendChild(stars);
 
       // rate count
