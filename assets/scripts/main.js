@@ -8,6 +8,8 @@ const recipes = [
   'https://introweb.tech/assets/json/chocolateChip.json'
 ];
 
+const DEBUG = false;
+
 // Once all of the recipes that were specified above have been fetched, their
 // data will be added to this object below. You may use whatever you like for the
 // keys as long as it's unique, one suggestion might but the URL itself
@@ -43,17 +45,30 @@ async function fetchRecipes() {
     // in the recipes folder and fetch them from there. You'll need to add their paths to the recipes array.
 
     // Part 1 Expose - TODO
+
+    let satisfiedCount = 0;
+
     for (let i = 0; i < recipes.length; i++) {
       const link = recipes[i];
       fetch(link)
         .then(response => response.json())
         .then(data => {
-          recipeData[link]=data; 
-          resolve(true);
+          recipeData[link] = data;
+          satisfiedCount++;
+          if (satisfiedCount === recipes.length) {
+            resolve(true);
+          }
         })
       .catch((error) => {
         reject(false);
       });
+
+      if(DEBUG) { 
+        console.log(`Fetching Recipe Data From: ${link}`);
+      }
+    }
+    if(DEBUG) {
+      console.log(recipeData);
     }
   });
 }
@@ -66,7 +81,29 @@ function createRecipeCards() {
   // show any others you've added when the user clicks on the "Show more" button.
 
   // Part 1 Expose - TODO
-  
+  let mainElem = document.querySelector('main');
+
+  //lex the RecipeCard component definition as 'recipe-card'
+  //customElements.define('recipe-card', RecipeCard);
+
+  for (let i = 0; i < recipes.length; i++) {
+    if(DEBUG) {
+      console.log(`Recipe Link: ${recipes[i]}`);
+      console.log(`Recipe JSON Data: ${recipeData[recipes[i]]}`);
+    }
+    
+    //make a new recipe card for every recipe in the database and put it in the document
+    let thisRecipeData = recipeData[recipes[i]];
+    let card = document.createElement('recipe-card');
+    card.data = thisRecipeData;
+    mainElem.appendChild(card);
+
+    if(DEBUG) {
+      console.log(`This Recipe's Fetched Data:${thisRecipeData}`);  
+      console.log(`This card's data: ${card.data}`);
+      console.log(card.outerHTML);
+    }
+  }
 }
 
 function bindShowMore() {
