@@ -2,4 +2,5 @@
 
 Dorothy Chou, Zane Wang
 
+https://dorothyychou.github.io/Lab6/
 
