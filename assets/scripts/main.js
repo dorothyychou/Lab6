@@ -6,9 +6,9 @@ const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
   'https://introweb.tech/assets/json/chocolateChip.json',
-  '../assets/recipes/honeyPrawns.json',
-  '../assets/recipes/lemonCake.json',
-  '../assets/recipes/broccoliPasta.json'
+  './assets/recipes/honeyPrawns.json',
+  './assets/recipes/lemonCake.json',
+  './assets/recipes/broccoliPasta.json'
 ];
 
 const DEBUG = false;
