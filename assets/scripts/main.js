@@ -101,7 +101,6 @@ function createRecipeCards() {
     if(DEBUG) {
       console.log(`This Recipe's Fetched Data:${thisRecipeData}`);  
       console.log(`This card's data: ${card.data}`);
-      console.log(card.outerHTML);
     }
   }
 }
