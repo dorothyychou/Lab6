@@ -5,10 +5,14 @@
 const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json'
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  '../assets/recipes/honeyPrawns.json',
+  '../assets/recipes/lemonCake.json',
+  '../assets/recipes/broccoliPasta.json'
 ];
 
 const DEBUG = false;
+var menuWidth = 3; // number of cards that fit on one row
 
 // Once all of the recipes that were specified above have been fetched, their
 // data will be added to this object below. You may use whatever you like for the
@@ -98,6 +102,10 @@ function createRecipeCards() {
     card.data = thisRecipeData;
     mainElem.appendChild(card);
 
+    if(i >= menuWidth) {
+      card.style.display = "none";
+    }
+
     if(DEBUG) {
       console.log(`This Recipe's Fetched Data:${thisRecipeData}`);  
       console.log(`This card's data: ${card.data}`);
@@ -115,4 +123,21 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
+  let showMoreButton = document.querySelector('button');
+  showMoreButton.addEventListener('click', function() {
+    let cardList = document.querySelectorAll("recipe-card");
+    let i = 0;
+    for(let blah of cardList) {
+      if (i >= menuWidth && blah.style.display === "block") {
+        blah.style.display = "none";
+      }
+      else {
+        blah.style.display = "block";
+      }
+      i++;
+    }
+    
+    showMoreButton.innerHTML = 'Show less';
+  });
+  
 }

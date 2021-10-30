@@ -1,0 +1,295 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [{
+        "@type": "Organization",
+        "@id": "https://www.recipetineats.com/#organization",
+        "name": "RecipeTin Eats",
+        "url": "https://www.recipetineats.com/",
+        "sameAs": ["https://www.facebook.com/RecipeTinEats", "http://instagram.com/recipe_tin", "https://www.linkedin.com/in/nagi-maehashi-9779648b", "https://www.youtube.com/c/recipetineats", "http://www.pinterest.com/recipetin/"],
+        "logo": {
+            "@type": "ImageObject",
+            "@id": "https://www.recipetineats.com/#logo",
+            "inLanguage": "en-US",
+            "url": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+            "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+            "width": 2591,
+            "height": 347,
+            "caption": "RecipeTin Eats"
+        },
+        "image": {
+            "@id": "https://www.recipetineats.com/#logo"
+        }
+    }, {
+        "@type": "WebSite",
+        "@id": "https://www.recipetineats.com/#website",
+        "url": "https://www.recipetineats.com/",
+        "name": "RecipeTin Eats",
+        "description": "Fast Prep, Big Flavours",
+        "publisher": {
+            "@id": "https://www.recipetineats.com/#organization"
+        },
+        "potentialAction": [{
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.recipetineats.com/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }],
+        "inLanguage": "en-US"
+    }, {
+        "@type": "ImageObject",
+        "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#primaryimage",
+        "inLanguage": "en-US",
+        "url": "https://www.recipetineats.com/wp-content/uploads/2021/09/Honey-Prawns_23.jpg",
+        "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2021/09/Honey-Prawns_23.jpg",
+        "width": 900,
+        "height": 1125,
+        "caption": "Pile of ultra crispy Honey Prawns"
+    }, {
+        "@type": "WebPage",
+        "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#webpage",
+        "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/",
+        "name": "Honey Prawns \u2013 stays crispy! | RecipeTin Eats",
+        "isPartOf": {
+            "@id": "https://www.recipetineats.com/#website"
+        },
+        "primaryImageOfPage": {
+            "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#primaryimage"
+        },
+        "datePublished": "2021-09-24T05:00:00+00:00",
+        "dateModified": "2021-10-05T17:48:44+00:00",
+        "breadcrumb": {
+            "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#breadcrumb"
+        },
+        "inLanguage": "en-US",
+        "potentialAction": [{
+            "@type": "ReadAction",
+            "target": ["https://www.recipetineats.com/honey-prawns-stays-crispy/"]
+        }]
+    }, {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#breadcrumb",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.recipetineats.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Collections",
+            "item": "https://www.recipetineats.com/category/collections/"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Asian Takeout",
+            "item": "https://www.recipetineats.com/category/collections/asian-takeout/"
+        }, {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Honey Prawns \u2013 stays crispy!"
+        }]
+    }, {
+        "@type": "Article",
+        "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#article",
+        "isPartOf": {
+            "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#webpage"
+        },
+        "author": {
+            "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9"
+        },
+        "headline": "Honey Prawns \u2013 stays crispy!",
+        "datePublished": "2021-09-24T05:00:00+00:00",
+        "dateModified": "2021-10-05T17:48:44+00:00",
+        "wordCount": 3326,
+        "commentCount": 66,
+        "publisher": {
+            "@id": "https://www.recipetineats.com/#organization"
+        },
+        "image": {
+            "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#primaryimage"
+        },
+        "thumbnailUrl": "https://www.recipetineats.com/wp-content/uploads/2021/09/Honey-Prawns_23.jpg",
+        "articleSection": ["Asian Recipes", "Asian Takeout", "Chinese recipes", "Prawns/Shrimp"],
+        "inLanguage": "en-US",
+        "potentialAction": [{
+            "@type": "CommentAction",
+            "name": "Comment",
+            "target": ["https://www.recipetineats.com/honey-prawns-stays-crispy/#respond"]
+        }]
+    }, {
+        "@type": "Person",
+        "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9",
+        "name": "Nagi",
+        "image": {
+            "@type": "ImageObject",
+            "@id": "https://www.recipetineats.com/#personlogo",
+            "inLanguage": "en-US",
+            "url": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+            "contentUrl": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+            "caption": "Nagi"
+        },
+        "description": "I believe you can make great food with everyday ingredients even if you\u2019re short on time and cost conscious. You just need to cook clever and get creative!",
+        "sameAs": ["http:////www.recipetineats.com/about-me/"]
+    }, {
+        "@context": "http://schema.org/",
+        "@type": "Recipe",
+        "name": "Honey Prawns - stays crispy for ages!",
+        "author": {
+            "@type": "Person",
+            "name": "Nagi"
+        },
+        "description": "Recipe video above. A recipe for old school Chinese restaurant style Honey Prawns! This recipe uses a proven method used in my Honey Chicken recipe for Honey Prawns that stays crispy hours even after coating in the sauce!1. Double coating - cornflour/cornstarch to seal in juices, followed by batter.2. Cold batter made with soda water = crispier coating that&#39;s puffy and light, not dense and greasy.3. Cornflour/cornstarch + flour batter - cornflour for ultra crispiness, flour for golden colour.4. Double fry for extra long lasting, thicker crispiness AND less greasy (Asian secret!).5. No-soggy Sauce - glucose or corn syrup to make it &quot;candy like&quot; to stick on the prawn crust rather than soaking in, plus NO WATER in the sauce.Note - the sauce is sweet. That&#39;s the way it&#39;s supposed to be! But not as sickly sweet as many Chinese restaurants tend to be. Please do not try to change the sauce as it has been formulated to prevent making the batter soggy.",
+        "datePublished": "2021-09-24T15:00:00+00:00",
+        "image": ["https://www.recipetineats.com/wp-content/uploads/2021/09/Honey-Prawns_23-SQ.jpg", "https://www.recipetineats.com/wp-content/uploads/2021/09/Honey-Prawns_23-SQ.jpg?w=500&h=500&crop=1", "https://www.recipetineats.com/wp-content/uploads/2021/09/Honey-Prawns_23-SQ.jpg?w=500&h=375&crop=1", "https://www.recipetineats.com/wp-content/uploads/2021/09/Honey-Prawns_23-SQ.jpg?w=480&h=270&crop=1"],
+        "recipeYield": ["4"],
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M",
+        "recipeIngredient": ["300g/ 10oz  prawns/shrimp (, peeled with tail on (600g/1.2lb whole unpeeled) (Note 1))", "1/2 tsp kosher/cooking salt ((halve for table salt))", "1/2 cup cornflour/cornstarch", "9 tbsp cornflour/cornstarch ((Note 2))", "6 tbsp flour (, plain/all-purpose)", "1/2 tsp baking powder ((NOT baking soda))", "1/2 tsp salt (, kosher/cooking (halve for table salt))", "2/3 cup + 1 tbsp  COLD soda water, club soda or seltzer water ((NOT sparkling mineral water, Note 3))", "3 - 4 cups vegetable or canola oil ((~4cm / 1.5&quot; depth in a pot))", "1/3 cup (100g)  honey", "1.5 tbsp (25g)  glucose OR corn syrup (light) ((Note 4))", "1 tbsp light soy sauce ((or all-purpose))", "2 tsp Chinese cooking wine ((or mirin))", "25g / 2 oz  Vermicelli rice noodles (optional) (, a wad of it (not mung bean noodles, it must be rice noodles))", "Sesame seeds, finely sliced green onions"],
+        "recipeInstructions": [{
+            "@type": "HowToSection",
+            "name": "Season and dust prawns:",
+            "itemListElement": [{
+                "@type": "HowToStep",
+                "text": "Salt prawns: Mix prawns with salt. (Don&#39;t do this ahead, salt makes prawns sweat = compromise crispy coating!)",
+                "name": "Salt prawns: Mix prawns with salt. (Don&#39;t do this ahead, salt makes prawns sweat = compromise crispy coating!)",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-0-0"
+            }, {
+                "@type": "HowToStep",
+                "text": "Dust: Place 1/2 cup cornflour/cornstarch in a bowl. Dip prawn in, shake off excess then put on a plate. Repeat with all prawns.",
+                "name": "Dust: Place 1/2 cup cornflour/cornstarch in a bowl. Dip prawn in, shake off excess then put on a plate. Repeat with all prawns.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-0-1"
+            }]
+        }, {
+            "@type": "HowToSection",
+            "name": "Cold batter and fry #1:",
+            "itemListElement": [{
+                "@type": "HowToStep",
+                "text": "Chill dry ingredients: Whisk together flour, cornflour/cornstarch, baking powder and salt in a bowl. Place in fridge while oil heats up. (Helps keep batter cold, cold batter = crispier prawns)",
+                "name": "Chill dry ingredients: Whisk together flour, cornflour/cornstarch, baking powder and salt in a bowl. Place in fridge while oil heats up. (Helps keep batter cold, cold batter = crispier prawns)",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-0"
+            }, {
+                "@type": "HowToStep",
+                "text": "Heat oil: Fill small pot or large saucepan with 4cm / 1.7&quot; oil. Heat to 160\u00b0C/320\u00b0F on medium high stove.",
+                "name": "Heat oil: Fill small pot or large saucepan with 4cm / 1.7&quot; oil. Heat to 160\u00b0C/320\u00b0F on medium high stove.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-1"
+            }, {
+                "@type": "HowToStep",
+                "text": "Make cold batter: When the oil is near target temp, add soda water into the dry ingredients. Then do the minimum whisks to just combine (10 or so) - a few lumps ok, better than whisking too much (changes coating texture).",
+                "name": "Make cold batter: When the oil is near target temp, add soda water into the dry ingredients. Then do the minimum whisks to just combine (10 or so) - a few lumps ok, better than whisking too much (changes coating texture).",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-2"
+            }, {
+                "@type": "HowToStep",
+                "text": "Batter thickness: Should fully coat prawns easily, not be see-through, but not thick and heavy. See video at 38 seconds for cues. Use extra soda water 1 teaspoon at a time to achieve right thickness.",
+                "name": "Batter thickness: Should fully coat prawns easily, not be see-through, but not thick and heavy. See video at 38 seconds for cues. Use extra soda water 1 teaspoon at a time to achieve right thickness.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-3"
+            }, {
+                "@type": "HowToStep",
+                "text": "Dredge: Holding a prawn by the tail, dip into the batter then hold up for a 2 seconds to let the excess batter drip off. Then carefully place in oil. Repeat with another 5 prawns (6 per batch).",
+                "name": "Dredge: Holding a prawn by the tail, dip into the batter then hold up for a 2 seconds to let the excess batter drip off. Then carefully place in oil. Repeat with another 5 prawns (6 per batch).",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-4"
+            }, {
+                "@type": "HowToStep",
+                "text": "3 minutes Fry #1: Cook for 3 minutes until light golden and crispy. When you pick them up, you can tell it&#39;s very crispy.",
+                "name": "3 minutes Fry #1: Cook for 3 minutes until light golden and crispy. When you pick them up, you can tell it&#39;s very crispy.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-5"
+            }, {
+                "@type": "HowToStep",
+                "text": "Drain and repeat: Place prawns on a tray with paper towels. Repeat with remaining prawns. I cook in 4 batches. Don&#39;t crowd the pot as it brings oil temperature down too much.",
+                "name": "Drain and repeat: Place prawns on a tray with paper towels. Repeat with remaining prawns. I cook in 4 batches. Don&#39;t crowd the pot as it brings oil temperature down too much.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-6"
+            }, {
+                "@type": "HowToStep",
+                "text": "Cool prawns for 20 minutes (Note 5). Meanwhile, make Sauce.",
+                "name": "Cool prawns for 20 minutes (Note 5). Meanwhile, make Sauce.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-1-7"
+            }]
+        }, {
+            "@type": "HowToSection",
+            "name": "Honey Sauce:",
+            "itemListElement": [{
+                "@type": "HowToStep",
+                "text": "Simmer: Place ingredients in a small saucepan over medium heat. Bring to simmer, turn down stove to medium low then leave to simmer for 3 minutes.",
+                "name": "Simmer: Place ingredients in a small saucepan over medium heat. Bring to simmer, turn down stove to medium low then leave to simmer for 3 minutes.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-2-0"
+            }, {
+                "@type": "HowToStep",
+                "text": "Syrupy consistency: The consistency should be like maple syrup (see video). Turn off stove, place lid on to keep warm (when cool, it gets too thick to toss prawns in it).",
+                "name": "Syrupy consistency: The consistency should be like maple syrup (see video). Turn off stove, place lid on to keep warm (when cool, it gets too thick to toss prawns in it).",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-2-1"
+            }]
+        }, {
+            "@type": "HowToSection",
+            "name": "Fry #2 \u2013 for ultra-crispy!",
+            "itemListElement": [{
+                "@type": "HowToStep",
+                "text": "Heat oil to 200\u00b0C/390\u00b0F.",
+                "name": "Heat oil to 200\u00b0C/390\u00b0F.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-3-0"
+            }, {
+                "@type": "HowToStep",
+                "text": "3 minutes Fry #2: Place half the prawns in oil (you can crowd the pot for Fry #2). Cook for 3 minutes or until it changes from pale golden to very golden, then remove to a paper towel-lined plate. You can tell by touching that it's built-to-last crispy! More golden = crispier (but don&#39;t overcook the prawns!) Repeat with remaining prawns.",
+                "name": "3 minutes Fry #2: Place half the prawns in oil (you can crowd the pot for Fry #2). Cook for 3 minutes or until it changes from pale golden to very golden, then remove to a paper towel-lined plate. You can tell by touching that it&#39;s built-to-last crispy! More golden = crispier (but don&#39;t overcook the prawns!) Repeat with remaining prawns.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-3-1"
+            }]
+        }, {
+            "@type": "HowToSection",
+            "name": "Sauce and serve:",
+            "itemListElement": [{
+                "@type": "HowToStep",
+                "text": "Quickly toss: Transfer prawns to a metal bowl then pour over Honey Sauce. Quickly toss with rubber spatula to coat prawns in sauce. (Sauce starts thickening if you take too long, so be quick!)",
+                "name": "Quickly toss: Transfer prawns to a metal bowl then pour over Honey Sauce. Quickly toss with rubber spatula to coat prawns in sauce. (Sauce starts thickening if you take too long, so be quick!)",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-4-0"
+            }, {
+                "@type": "HowToStep",
+                "text": "Garnish: Pile prawns over crispy rice noodles (if using), scatter with sesame seeds, green onion and serve!",
+                "name": "Garnish: Pile prawns over crispy rice noodles (if using), scatter with sesame seeds, green onion and serve!",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-4-1"
+            }]
+        }, {
+            "@type": "HowToSection",
+            "name": "Puffy crispy rice noodles (optional):",
+            "itemListElement": [{
+                "@type": "HowToStep",
+                "text": "At any point while oil is hot, drop a wad of noodles into hot oil, wait 3 seconds until it puffs up, then remove with tongs.",
+                "name": "At any point while oil is hot, drop a wad of noodles into hot oil, wait 3 seconds until it puffs up, then remove with tongs.",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-5-0"
+            }, {
+                "@type": "HowToStep",
+                "text": "Drain on paper towels, place on plate. Top with prawns! (Note: Crispy noodles stays crispy &quot;forever&quot; so you can do this well ahead. Not for eating - is flavourless.)",
+                "name": "Drain on paper towels, place on plate. Top with prawns! (Note: Crispy noodles stays crispy &quot;forever&quot; so you can do this well ahead. Not for eating - is flavourless.)",
+                "url": "https://www.recipetineats.com/honey-prawns-stays-crispy/#wprm-recipe-69011-step-5-1"
+            }]
+        }],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "9"
+        },
+        "recipeCategory": ["Mains"],
+        "recipeCuisine": ["Chinese"],
+        "keywords": "crispy fried prawns, crispy fry batter, honey prawns",
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "482 kcal",
+            "carbohydrateContent": "42 g",
+            "proteinContent": "16 g",
+            "fatContent": "28 g",
+            "saturatedFatContent": "2 g",
+            "transFatContent": "1 g",
+            "cholesterolContent": "121 mg",
+            "sodiumContent": "933 mg",
+            "fiberContent": "1 g",
+            "sugarContent": "23 g",
+            "unsaturatedFatContent": "26 g",
+            "servingSize": "1 serving"
+        },
+        "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#recipe",
+        "isPartOf": {
+            "@id": "https://www.recipetineats.com/honey-prawns-stays-crispy/#article"
+        },
+        "mainEntityOfPage": "https://www.recipetineats.com/honey-prawns-stays-crispy/#webpage"
+    }]
+}
