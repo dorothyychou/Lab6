@@ -144,7 +144,7 @@ function bindShowMore() {
       i++;
     }
     let text = showMoreButton.innerHTML;
-    showMoreButton.innerHTML = text.toLowerCase() == "show less" ? "Show More" : "Show Less";
+    showMoreButton.innerHTML = text.toLowerCase() == "show less" ? "Show more" : "Show less";
   });
   
 }
