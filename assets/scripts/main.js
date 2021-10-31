@@ -143,8 +143,8 @@ function bindShowMore() {
       }
       i++;
     }
-    
-    showMoreButton.innerHTML = 'Show less';
+    let text = showMoreButton.innerHTML;
+    showMoreButton.innerHTML = text.toLowerCase() == "show less" ? "Show More" : "Show Less";
   });
   
 }
